@@ -35,7 +35,7 @@ function create(params = {}){
 
         if(!params.horizontal && $(html).is(parent[0])) inner = true
 
-        if(Storage.field('navigation_type') == 'mouse' && Date.now() - scroll_time > 200 && inner){
+        if(Storage.field('navigation_type') == 'mouse' && Date.now() - scroll_time > 20 && inner){
             scroll_time = Date.now()
 
             if(e.wheelDelta / 120 > 0) {
